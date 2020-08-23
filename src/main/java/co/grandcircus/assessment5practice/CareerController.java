@@ -16,14 +16,13 @@ public class CareerController {
 	@RequestMapping("/year-selection")
 	public String showDetails1() {
 		
-		return "submit-details";
+		return "year-selection";
 	}
 	
 	@RequestMapping("/submit-details")
 	public String showUserDetails(Model model, @RequestParam("name") String Name, @RequestParam("year") int Year) {
 		
-		model.addAttribute("Name", Name);
-		model.addAttribute("Year", Year);
+		
 		if(Year<1943) {
 			
 			model.addAttribute("message","Sorry, your birth year is out of range");
@@ -40,16 +39,17 @@ public class CareerController {
 			model.addAttribute("nameGuidelines","Sorry, your name does not follow guidelines ");
 			return"sorry";
 		}
-		
+		model.addAttribute("Name", Name);
+		model.addAttribute("Year", Year);
 		return "career-selection";
 	}
-	
+	/*
 	@RequestMapping("/career-selection")
 	public String showCareerDetails() {
 		
 
-		return "/career";
-	}
+		return "/career-selection";
+	}*/
 	@RequestMapping("/career")
 	
 	public String showCareerChoice(Model model, @RequestParam("careerDisplay") String careerDisplay

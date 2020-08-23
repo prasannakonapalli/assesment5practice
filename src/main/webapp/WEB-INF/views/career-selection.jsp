@@ -21,8 +21,6 @@
 	<div class="container">
 		<h2 class="display-4">Career Selection</h2>
 
-		<form action="/career">
-
 
 
 			<a href="/career?careerDisplay=SoftwareDeveloper">Software
@@ -34,7 +32,7 @@
 
 
 
-		</form>
+		
 
 
 
