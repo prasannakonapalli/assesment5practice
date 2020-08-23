@@ -20,22 +20,20 @@
 
 	<div class="container">
 		<h2 class="display-4">Sorry page</h2>
-			>
-		<p>
-			<!-- <div><strong>Msg: </strong> -->
-			<c:out value="${message}" />
-		</p>
-		 </div>
-		 <div>
-		<p>
-			<!--  <div><strong>Text: </strong> -->
-			<c:out value="${nameGuidelines}" />
-		</p> 
+		<div>
+			<p>
+				<!-- <div><strong>Msg: </strong> -->
+				<c:out value="${message}" />
+			</p>
 		</div>
 
-
-
-
+		<div>
+			<p>
+				<!--  <div><strong>Text: </strong> -->
+				<c:out value="${nameGuidelines}" />
+			</p>
+		</div>
+ 
 
 	</div>
 

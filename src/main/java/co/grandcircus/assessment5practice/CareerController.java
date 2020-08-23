@@ -35,7 +35,7 @@ public class CareerController {
 			return"sorry";
 		}
 		char firstChar = Name.charAt(0);
-		if(Character.isLowerCase(firstChar)) {
+		if(Character.isLowerCase(firstChar) || firstChar==' ') {
 			
 			model.addAttribute("nameGuidelines","Sorry, your name does not follow guidelines ");
 			return"sorry";
@@ -48,9 +48,9 @@ public class CareerController {
 	public String showCareerDetails() {
 		
 
-		return "career-display";
+		return "/career";
 	}
-	@RequestMapping("/career-display")
+	@RequestMapping("/career")
 	
 	public String showCareerChoice(Model model, @RequestParam("careerDisplay") String careerDisplay
 		//	, @RequestParam("scrumMaster") String master, @RequestParam("qaAnalyst") String qAnalyst, @RequestParam("businessAnalyst") String bAnalyst

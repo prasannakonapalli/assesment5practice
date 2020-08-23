@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Sample Landing Page</title>
+<title>Career Selection</title>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 	integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
@@ -19,23 +19,22 @@
 <body>
 
 	<div class="container">
-		<h2 class="display-4">career selection</h2>
-		
-		<form action="/career-display">
-		
-		
-		 
-		  <a href="/career-display?careerDisplay=SoftwareDeveloper">Software Developer</a><br>  
-			<a href="/career-display?careerDisplay=ScrumMaster">Scrum Master</a><br>
-			
-		 	<a href="/career-display?careerDisplay=QAAnalyst">QA Analyst</a><br>
-			
-			<a href="/career-display?careerDisplay=BusinessAnalyst">Business Analyst</a>
-			
-			
-		 
+		<h2 class="display-4">Career Selection</h2>
 
-</form>
+		<form action="/career">
+
+
+
+			<a href="/career?careerDisplay=SoftwareDeveloper">Software
+				Developer</a><br> <a href="/career?careerDisplay=ScrumMaster">Scrum
+				Master</a><br> <a href="/career?careerDisplay=QAAnalyst">QA
+				Analyst</a><br> <a href="/career?careerDisplay=BusinessAnalyst">Business
+				Analyst</a>
+
+
+
+
+		</form>
 
 
 
