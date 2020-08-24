@@ -21,7 +21,7 @@
 
 	<div class="container">
 		<h2 class="display-4">Year-Selection</h2>
-		<form action="/submit-details">
+		<form action="/submit-details" method="post">
 			<div>
 				<strong>Name: </strong> <input type="text" name="name" />
 			</div>

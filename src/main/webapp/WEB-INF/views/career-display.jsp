@@ -26,7 +26,7 @@
 
 
 
-		<c:choose>
+		<!-- <c:choose>
 			<c:when test="${careerDisplay.equals('SoftwareDeveloper')}">
 				<p>You have chosen Software Developer
 				<p>
@@ -43,7 +43,8 @@
 				<p>You have chosen Business Analyst
 				<p>
 			</c:otherwise>
-		</c:choose>
+		</c:choose> -->
+		<c:out value="you have chosen ${careerDisplay}"/>
 
 
 	</div>

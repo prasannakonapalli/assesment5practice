@@ -21,18 +21,28 @@
 	<div class="container">
 		<h2 class="display-4">Career Selection</h2>
 
+		<!-- <a href="<c:url value="/test.html" var="testvar" />">TEST</a> // testvar is where you put the url formatted by c:url
+<c:out value="${testvar}"/> // you print what is the formatted url -->
+
+		<c:url value="/career?careerDisplay=Software Developer"
+			var="sDeveloper" />
+
+		<a href="${sDeveloper}">Software Developer</a><br>
+
+		<c:set var="sm" value="Scrum Master" />
+		<a href="/career?careerDisplay=${sm}">${sm}</a><br> 
+		<c:url value="/career?careerDisplay=QA Analyst" var="qAnalyst" />
+
+		<a href="${qAnalyst}">QA Analyst</a><br> 
+		<c:url value="/career?careerDisplay=Business Analyst" var="bAnalyst" />
+
+		<a href="${bAnalyst}">Business Analyst</a>
 
 
-			<a href="/career?careerDisplay=SoftwareDeveloper">Software
-				Developer</a><br> <a href="/career?careerDisplay=ScrumMaster">Scrum
-				Master</a><br> <a href="/career?careerDisplay=QAAnalyst">QA
-				Analyst</a><br> <a href="/career?careerDisplay=BusinessAnalyst">Business
-				Analyst</a>
 
 
 
 
-		
 
 
 
